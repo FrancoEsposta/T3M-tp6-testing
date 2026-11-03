@@ -5,12 +5,22 @@ No está pensada para ejecutarse con éxito (la BD no existe); solo para ser ana
 
 ## Cómo ejecutar los análisis
 
-SonarQube (con servidor local en :9000 y token generado):
-    mvn clean verify sonar:sonar -Dsonar.token=TU_TOKEN -Dsonar.host.url=http://localhost:9000
+Requisitos: JDK 17 y Maven 3.9+. Para compilar: `mvn clean compile`.
 
-Checkstyle (reglas Sun o Google):
-    mvn checkstyle:check -Dcheckstyle.config.location=sun_checks.xml
-    mvn checkstyle:check -Dcheckstyle.config.location=google_checks.xml
+SonarQube (servidor local en :9000 con un token generado):
+    docker run -d --name sonarqube -p 9000:9000 sonarqube:community
+    mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar "-Dsonar.token=TU_TOKEN" "-Dsonar.host.url=http://localhost:9000"
+
+(El atajo `sonar:sonar` no se resuelve en un Maven sin configurar; por eso se usan las coordenadas completas.
+Las comillas en los `-D` son necesarias en PowerShell.)
+
+Checkstyle (reglas Sun o Google; `failOnViolation=false` evita que el build falle y deja el reporte en target/checkstyle-result.xml):
+    mvn checkstyle:check "-Dcheckstyle.config.location=sun_checks.xml" "-Dcheckstyle.failOnViolation=false"
+    mvn checkstyle:check "-Dcheckstyle.config.location=google_checks.xml" "-Dcheckstyle.failOnViolation=false"
+
+Los resultados de la ejecución original están en la carpeta `reportes/`.
+
+Nota: las credenciales y la API key que aparecen en el código son falsas y forman parte de los defectos sembrados.
 
 ## Defectos sembrados y detección esperada
 (Orientativa: depende de versión, edición y perfil de reglas. Verifica contra tus resultados reales.)
