@@ -1,0 +1,707 @@
+﻿{
+    "measures":  [
+                     {
+                         "metric":  "bugs",
+                         "value":  "6",
+                         "bestValue":  false
+                     },
+                     {
+                         "metric":  "reliability_rating",
+                         "value":  "5.0",
+                         "bestValue":  false
+                     },
+                     {
+                         "metric":  "code_smells",
+                         "value":  "0",
+                         "bestValue":  true
+                     },
+                     {
+                         "metric":  "duplicated_lines_density",
+                         "value":  "0.0",
+                         "bestValue":  true
+                     },
+                     {
+                         "metric":  "security_rating",
+                         "value":  "5.0",
+                         "bestValue":  false
+                     },
+                     {
+                         "metric":  "ncloc",
+                         "value":  "193"
+                     },
+                     {
+                         "metric":  "vulnerabilities",
+                         "value":  "5",
+                         "bestValue":  false
+                     },
+                     {
+                         "metric":  "security_hotspots",
+                         "value":  "0",
+                         "bestValue":  true
+                     },
+                     {
+                         "metric":  "sqale_rating",
+                         "value":  "1.0",
+                         "bestValue":  true
+                     }
+                 ],
+    "issues":  [
+                   {
+                       "key":  "ed77720a-5054-4369-8a8d-e3a316058e8d",
+                       "rule":  "java:S2259",
+                       "severity":  "MAJOR",
+                       "component":  "demo-analisis:src/main/java/com/demo/app/Main.java",
+                       "project":  "demo-analisis",
+                       "line":  34,
+                       "hash":  "3e33ab57b6193e3ec8bef8eed9f8f5c8",
+                       "textRange":  {
+                                         "startLine":  34,
+                                         "endLine":  34,
+                                         "startOffset":  27,
+                                         "endOffset":  39
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "demo-analisis:src/main/java/com/demo/app/Main.java",
+                                                               "textRange":  {
+                                                                                 "startLine":  34,
+                                                                                 "endLine":  34,
+                                                                                 "startOffset":  27,
+                                                                                 "endOffset":  39
+                                                                             },
+                                                               "msg":  "\u0027extra\u0027 is dereferenced.",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           },
+                                                           {
+                                                               "component":  "demo-analisis:src/main/java/com/demo/app/Main.java",
+                                                               "textRange":  {
+                                                                                 "startLine":  30,
+                                                                                 "endLine":  30,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  28
+                                                                             },
+                                                               "msg":  "Implies \u0027extra\u0027 is null.",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "A \"NullPointerException\" could be thrown; \"extra\" is nullable here.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "symbolic-execution",
+                                    "cert"
+                                ],
+                       "creationDate":  "2026-11-03T01:36:29+0000",
+                       "updateDate":  "2026-11-03T01:36:29+0000",
+                       "type":  "BUG",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "LOGICAL",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "becca00a-d778-464a-8b14-6350ae60f16f",
+                       "rule":  "java:S6418",
+                       "severity":  "BLOCKER",
+                       "component":  "demo-analisis:src/main/java/com/demo/app/UserService.java",
+                       "project":  "demo-analisis",
+                       "line":  19,
+                       "hash":  "78f97a6aed352504fa58ef7414dccd64",
+                       "textRange":  {
+                                         "startLine":  19,
+                                         "endLine":  19,
+                                         "startOffset":  16,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "\u0027apiKey\u0027 detected in this expression, review this potentially hard-coded secret.",
+                       "effort":  "30min",
+                       "debt":  "30min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "cert",
+                                    "secret",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-11-03T01:36:29+0000",
+                       "updateDate":  "2026-11-03T01:36:29+0000",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "BLOCKER"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "bffc8f41-505b-4ee0-b303-cd7a4559ee14",
+                       "rule":  "java:S2095",
+                       "severity":  "BLOCKER",
+                       "component":  "demo-analisis:src/main/java/com/demo/app/UserService.java",
+                       "project":  "demo-analisis",
+                       "line":  24,
+                       "hash":  "334c14d7465702206a68d61eee8bb5aa",
+                       "textRange":  {
+                                         "startLine":  24,
+                                         "endLine":  24,
+                                         "startOffset":  19,
+                                         "endOffset":  75
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use try-with-resources or close this \"Connection\" in a \"finally\" clause.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "symbolic-execution",
+                                    "leak",
+                                    "denial-of-service",
+                                    "cert"
+                                ],
+                       "creationDate":  "2026-11-03T01:36:29+0000",
+                       "updateDate":  "2026-11-03T01:36:29+0000",
+                       "type":  "BUG",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "BLOCKER"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "fbde3a86-23a9-4bef-9944-cce04e6ebada",
+                       "rule":  "java:S2095",
+                       "severity":  "BLOCKER",
+                       "component":  "demo-analisis:src/main/java/com/demo/app/UserService.java",
+                       "project":  "demo-analisis",
+                       "line":  25,
+                       "hash":  "d7fdea3ecfeb5f41fbbda1f67a30713d",
+                       "textRange":  {
+                                         "startLine":  25,
+                                         "endLine":  25,
+                                         "startOffset":  27,
+                                         "endOffset":  49
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use try-with-resources or close this \"Statement\" in a \"finally\" clause.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "symbolic-execution",
+                                    "leak",
+                                    "denial-of-service",
+                                    "cert"
+                                ],
+                       "creationDate":  "2026-11-03T01:36:29+0000",
+                       "updateDate":  "2026-11-03T01:36:29+0000",
+                       "type":  "BUG",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "BLOCKER"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "bf57d834-8a62-42fc-9fd8-fc4eb6100ac4",
+                       "rule":  "java:S2077",
+                       "severity":  "MAJOR",
+                       "component":  "demo-analisis:src/main/java/com/demo/app/UserService.java",
+                       "project":  "demo-analisis",
+                       "line":  27,
+                       "hash":  "fda6f1a3e3a8cfd184d60f0b72024eac",
+                       "textRange":  {
+                                         "startLine":  27,
+                                         "endLine":  27,
+                                         "startOffset":  43,
+                                         "endOffset":  46
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "demo-analisis:src/main/java/com/demo/app/UserService.java",
+                                                               "textRange":  {
+                                                                                 "startLine":  26,
+                                                                                 "endLine":  26,
+                                                                                 "startOffset":  25,
+                                                                                 "endOffset":  114
+                                                                             },
+                                                               "msg":  "SQL Query is dynamically formatted and assigned to \u0027sql\u0027",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure using a dynamically formatted SQL query is safe here.",
+                       "effort":  "20min",
+                       "debt":  "20min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "spring",
+                                    "bad-practice",
+                                    "cert",
+                                    "hibernate",
+                                    "former-hotspot",
+                                    "sql"
+                                ],
+                       "creationDate":  "2026-11-03T01:36:29+0000",
+                       "updateDate":  "2026-11-03T01:36:29+0000",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       },
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "7f7ad29d-3dc0-412a-a76d-6c761f65a23e",
+                       "rule":  "java:S4507",
+                       "severity":  "MINOR",
+                       "component":  "demo-analisis:src/main/java/com/demo/app/UserService.java",
+                       "project":  "demo-analisis",
+                       "line":  30,
+                       "hash":  "2dc1665d31b37f9aa7408939a0365027",
+                       "textRange":  {
+                                         "startLine":  30,
+                                         "endLine":  30,
+                                         "startOffset":  14,
+                                         "endOffset":  29
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure this debug feature is deactivated before delivering the code in production.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "error-handling",
+                                    "spring",
+                                    "debug",
+                                    "user-experience",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-11-03T01:36:29+0000",
+                       "updateDate":  "2026-11-03T01:36:29+0000",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "d61ca59f-2020-4de4-81c7-94a5ff50fa5d",
+                       "rule":  "java:S4790",
+                       "severity":  "CRITICAL",
+                       "component":  "demo-analisis:src/main/java/com/demo/app/UserService.java",
+                       "project":  "demo-analisis",
+                       "line":  37,
+                       "hash":  "ba46c38c50609cfcf7a05bd761baf90b",
+                       "textRange":  {
+                                         "startLine":  37,
+                                         "endLine":  37,
+                                         "startOffset":  45,
+                                         "endOffset":  56
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure this weak hash algorithm is not used in a sensitive context here.",
+                       "effort":  "30min",
+                       "debt":  "30min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "cryptography",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-11-03T01:36:29+0000",
+                       "updateDate":  "2026-11-03T01:36:29+0000",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "014d2707-54b1-450b-ba16-b2680dc6f108",
+                       "rule":  "java:S2245",
+                       "severity":  "MAJOR",
+                       "component":  "demo-analisis:src/main/java/com/demo/app/UserService.java",
+                       "project":  "demo-analisis",
+                       "line":  50,
+                       "hash":  "034d1238458ecb50e227a7c34759dd67",
+                       "textRange":  {
+                                         "startLine":  50,
+                                         "endLine":  50,
+                                         "startOffset":  23,
+                                         "endOffset":  29
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure that using this pseudorandom number generator is safe here.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "cryptography",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-11-03T01:36:29+0000",
+                       "updateDate":  "2026-11-03T01:36:29+0000",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "45bf5350-3edc-4e5f-85ba-7a38d90b1ded",
+                       "rule":  "java:S2119",
+                       "severity":  "CRITICAL",
+                       "component":  "demo-analisis:src/main/java/com/demo/app/UserService.java",
+                       "project":  "demo-analisis",
+                       "line":  50,
+                       "hash":  "034d1238458ecb50e227a7c34759dd67",
+                       "textRange":  {
+                                         "startLine":  50,
+                                         "endLine":  50,
+                                         "startOffset":  23,
+                                         "endOffset":  29
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Save and re-use this \"Random\".",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2026-11-03T01:36:29+0000",
+                       "updateDate":  "2026-11-03T01:36:29+0000",
+                       "type":  "BUG",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "96c803ff-b4d6-4423-b9fc-a952c845fe8c",
+                       "rule":  "java:S2095",
+                       "severity":  "BLOCKER",
+                       "component":  "demo-analisis:src/main/java/com/demo/app/UserService.java",
+                       "project":  "demo-analisis",
+                       "line":  55,
+                       "hash":  "2653e0b9ca282cf79b6bd66f137d6dbe",
+                       "textRange":  {
+                                         "startLine":  55,
+                                         "endLine":  55,
+                                         "startOffset":  32,
+                                         "endOffset":  94
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use try-with-resources or close this \"BufferedReader\" in a \"finally\" clause.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "symbolic-execution",
+                                    "leak",
+                                    "denial-of-service",
+                                    "cert"
+                                ],
+                       "creationDate":  "2026-11-03T01:36:29+0000",
+                       "updateDate":  "2026-11-03T01:36:29+0000",
+                       "type":  "BUG",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "BLOCKER"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "0daaa954-8ee9-4e66-add4-94d97735f284",
+                       "rule":  "java:S4973",
+                       "severity":  "MAJOR",
+                       "component":  "demo-analisis:src/main/java/com/demo/app/UserService.java",
+                       "project":  "demo-analisis",
+                       "line":  74,
+                       "hash":  "b045515655e9b34c1f28efe37e0009fd",
+                       "textRange":  {
+                                         "startLine":  74,
+                                         "endLine":  74,
+                                         "startOffset":  17,
+                                         "endOffset":  19
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Strings and Boxed types should be compared using \"equals()\".",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "cert"
+                                ],
+                       "creationDate":  "2026-11-03T01:36:29+0000",
+                       "updateDate":  "2026-11-03T01:36:29+0000",
+                       "type":  "BUG",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "LOGICAL",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "hotspots":  [
+
+                 ]
+}

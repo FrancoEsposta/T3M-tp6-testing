@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="src\main\java\com\demo\app\Main.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="8" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="8" column="26" severity="error" message="Name &apos;DB_PASSWORD&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
+<error line="8" column="26" severity="error" message="Variable &apos;DB_PASSWORD&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="9" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="9" column="25" severity="error" message="Variable &apos;logs&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="11" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="11" column="29" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="24" column="50" severity="error" message="&apos;3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="24" column="53" severity="error" message="&apos;150.0&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="31" column="27" severity="error" message="&apos;3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="32" column="26" severity="error" message="&apos;3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+<file name="src\main\java\com\demo\app\OrderCalculator.java">
+<error line="5" column="5" severity="error" message="Class &apos;OrderCalculator&apos; looks like designed for extension (can be subclassed), but the method &apos;calculate&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;OrderCalculator&apos; final or making the method &apos;calculate&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="5" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="5" column="29" severity="error" message="Parameter customerType should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="5" column="50" severity="error" message="Parameter quantity should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="5" column="64" severity="error" message="Parameter price should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="9" column="32" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="10" column="33" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="11" column="52" severity="error" message="&apos;0.7&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="13" column="52" severity="error" message="&apos;0.8&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="15" column="39" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="16" column="33" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="17" column="52" severity="error" message="&apos;0.85&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="19" column="52" severity="error" message="&apos;0.9&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="22" column="48" severity="error" message="&apos;0.95&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="25" column="32" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="26" column="33" severity="error" message="&apos;100&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="27" column="52" severity="error" message="&apos;0.85&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="29" column="52" severity="error" message="&apos;0.9&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="39" column="25" severity="error" message="&apos;1.21&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="44" column="27" severity="error" message="Parameter amount should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="45" column="25" severity="error" message="&apos;1.21&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="48" column="5" severity="error" message="Class &apos;OrderCalculator&apos; looks like designed for extension (can be subclassed), but the method &apos;pointsFor&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;OrderCalculator&apos; final or making the method &apos;pointsFor&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="48" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="48" column="26" severity="error" message="Parameter quantity should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="53" column="5" severity="error" message="Class &apos;OrderCalculator&apos; looks like designed for extension (can be subclassed), but the method &apos;isFreeShipping&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;OrderCalculator&apos; final or making the method &apos;isFreeShipping&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="53" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="53" column="35" severity="error" message="Parameter total should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="54" column="22" severity="error" message="&apos;100.0&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="57" column="24" severity="error" message="&apos;100.0&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="60" severity="error" message="Line is longer than 80 characters (found 88)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="60" column="5" severity="error" message="Class &apos;OrderCalculator&apos; looks like designed for extension (can be subclassed), but the method &apos;calculateDiscounted&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;OrderCalculator&apos; final or making the method &apos;calculateDiscounted&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="60" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="60" column="39" severity="error" message="Parameter customerType should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="60" column="60" severity="error" message="Parameter quantity should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="60" column="74" severity="error" message="Parameter price should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="63" column="40" severity="error" message="&apos;0.95&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="67" column="25" severity="error" message="&apos;1.21&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+<file name="src\main\java\com\demo\app\UserService.java">
+<error line="18" column="1" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+<error line="18" column="9" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="19" column="9" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="21" column="5" severity="error" message="Class &apos;UserService&apos; looks like designed for extension (can be subclassed), but the method &apos;login&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;UserService&apos; final or making the method &apos;login&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="21" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="21" column="26" severity="error" message="Parameter user should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="21" column="39" severity="error" message="Parameter pass should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="26" severity="error" message="Line is longer than 80 characters (found 115)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="35" column="5" severity="error" message="Class &apos;UserService&apos; looks like designed for extension (can be subclassed), but the method &apos;hashPassword&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;UserService&apos; final or making the method &apos;hashPassword&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="35" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="35" column="32" severity="error" message="Parameter pass should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="49" column="5" severity="error" message="Class &apos;UserService&apos; looks like designed for extension (can be subclassed), but the method &apos;generateToken&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;UserService&apos; final or making the method &apos;generateToken&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="49" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="54" column="5" severity="error" message="Class &apos;UserService&apos; looks like designed for extension (can be subclassed), but the method &apos;readReport&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;UserService&apos; final or making the method &apos;readReport&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="54" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="54" column="30" severity="error" message="Parameter fileName should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="55" severity="error" message="Line is longer than 80 characters (found 95)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="64" column="5" severity="error" message="Class &apos;UserService&apos; looks like designed for extension (can be subclassed), but the method &apos;loadSession&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;UserService&apos; final or making the method &apos;loadSession&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="64" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="64" column="31" severity="error" message="Parameter in should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="73" column="5" severity="error" message="Class &apos;UserService&apos; looks like designed for extension (can be subclassed), but the method &apos;isAdmin&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;UserService&apos; final or making the method &apos;isAdmin&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="73" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="73" column="28" severity="error" message="Parameter role should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="80" column="5" severity="error" message="Class &apos;UserService&apos; looks like designed for extension (can be subclassed), but the method &apos;canDeleteUser&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;UserService&apos; final or making the method &apos;canDeleteUser&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="80" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="80" column="34" severity="error" message="Parameter role should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="81" severity="error" message="Line is longer than 80 characters (found 107)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="85" column="31" severity="error" message="Parameter a should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="85" column="41" severity="error" message="Parameter b should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="86" column="20" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="91" column="5" severity="error" message="Class &apos;UserService&apos; looks like designed for extension (can be subclassed), but the method &apos;process&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;UserService&apos; final or making the method &apos;process&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="91" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="91" column="25" severity="error" message="Parameter type should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="92" column="11" severity="error" message="Comment matches to-do format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="93" column="9" severity="error" message="switch without &quot;default&quot; clause." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"/>
+</file>
+</checkstyle>
